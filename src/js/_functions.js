@@ -5,6 +5,9 @@
 import { mobileCheck } from "./functions/mobile-check";
 console.log(mobileCheck())
 
+// Реализация бургер-меню
+import { burger } from './functions/burger';
+
 // Определение ширины экрана
 // import { isMobile, isTablet, isDesktop } from './functions/check-viewport';
 // if (isDesktop()) {
@@ -20,8 +23,7 @@ console.log(mobileCheck())
 // Фикс фулскрин-блоков
 // import './functions/fix-fullheight';
 
-// Реализация бургер-меню
-// import { burger } from './functions/burger';
+
 
 // Реализация остановки скролла (не забудьте вызвать функцию)
 // import { disableScroll } from './functions/disable-scroll';

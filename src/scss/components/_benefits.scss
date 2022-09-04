@@ -5,10 +5,22 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 40px;
+
+    @include mobile {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
 
   &__item {
     grid-column: span 4;
+
+    @include high-desktop {
+      grid-column: span 6;
+    }
+
+    @include mobile {
+      grid-column: span 4;
+    }
   }
 
   &__subtitle {

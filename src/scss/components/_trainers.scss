@@ -9,7 +9,11 @@
   }
 
   .swiper-slide {
-    width: 360xp;
+    width: 360px !important;
+
+    @include small-tablet {
+      width: 220px !important;
+    }
   }
 
   .swiper-scrollbar-drag {
@@ -56,6 +60,12 @@
     height: 5px;
     background: rgba(20, 16, 36, 0.08);
     border-radius: 40px;
+  }
+
+  &__btns {
+    @include mobile {
+      display: none;
+    }
   }
 
   &__sliders-btns {

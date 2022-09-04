@@ -14,6 +14,12 @@
   &__left {
     grid-column: span 5;
     padding-left: 60px;
+
+    @include high-tablet {
+      grid-column: span 12;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
@@ -38,6 +44,13 @@
     justify-content: flex-end;
     grid-column: span 7;
     padding-right: 60px;
+
+    @include high-tablet {
+      justify-content: flex-start;
+      grid-column: span 12;
+      padding-left: 0;
+
+    }
   }
 
   &__form {

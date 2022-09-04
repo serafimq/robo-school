@@ -1,0 +1,137 @@
+.graph-modal__close {
+  right: 40px;
+  top: 40px;
+  font-style: normal;
+  width: auto;
+  height: auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: var(--text-color);
+
+  @include mobile {
+    right: 20px;
+    top: 20px;
+  }
+}
+
+.graph-modal {
+  &::before {
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.popup {
+  padding: 40px;
+  width: 100%;
+  max-width: 940px;
+
+  &__top {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
+  &__image {
+    margin-right: 40px;
+
+    @include mobile {
+      margin-right: 20px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+    color: var(--dark-color);
+  }
+
+  &__post {
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--text-color);
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: var(--dark-color);
+  }
+
+  &__bottom-content {
+    padding-top: 20px;
+    padding-right: 20px;
+    max-height: 375px;
+  }
+
+  &__descr {
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 160%;
+  }
+
+  @include small-tablet {
+    padding-top: 80px;
+  }
+  @include mobile {
+    padding: 20px;
+    padding-top: 40px;
+  }
+}
+
+.tabs {
+  &__menu {
+    border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+    padding-bottom: 20px;
+  }
+  &__nav {
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-item {
+      @include mobile {
+        margin-right: 40px;
+        margin-bottom: 20px;
+      }
+    }
+    &-btn {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 160%;
+      color: var(--dark-color);
+
+      &:focus {
+        background-color: transparent;
+        outline: none;
+        color: var(--accent-color);
+      }
+
+      &--active {
+        background-color: transparent;
+        outline: none;
+        color: var(--accent-color);
+      }
+    }
+    @include mobile {
+      flex-wrap: wrap;
+    }
+  }
+
+}
